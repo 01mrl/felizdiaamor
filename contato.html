@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+body {
+    margin: 0;
+    border: solid black 3px;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color:#494B55;
+}
+
+ul {
+    list-style-type: none;
+    color: black;
+    
+}
+
+.borda {
+    border: solid black 3px;
+}
+a,
+a:link {
+    text-decoration: none;
+    padding: 8px 16px;
+    border: solid black 1px;
+    color: black;
+    background-color: #315AFF;
+}
+
+a:hover {
+    background-color: #315AFF;
+    color: white;
+}
+
+li {float:left}
+
+.container {
+    display: grid;
+}
+
+.menu {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    justify-content: center;
+    background-color:#494B55;
+    gap: 20px;
+}
+
+.contato {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    color: black;
+}
+
+.texto_ensino {
+    
+    grid-column-start: 4;
+    grid-column-end: 12;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    color: black;
+}
+
+input[type=email], input[type=text] {
+width: 345px;
+
+
+}
+
+
+</style>
+
+
+<body>
+    
+    <section class="borda">    
+        <header class="container">
+            <h1 style="color: yallow; text-align: center;">Contato</h1>
+            <br>
+        
+        </header>
+        <nav class="container menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="profissional.html">Profissional</a></li>
+                <li><a href="ensino.html">Ensino</a></li>
+                <li><a href="objetivos.html">Objetivos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </section>
+
+   
+
+    <div class="container alinhamento corfundo1 borda contato">
+
+        <h3>Informe os dados abaixo</h3>     
+
+        <form>
+
+            <table>
+                <tr> 
+                    <th><tabel>Nome Completo</tabel></th> 
+                    <td><input type="text"></td>
+                     
+                    <th><tabel>Email</tabel></th>
+                    <td><input type="email"> </td> 
+                </tr> 
+                
+                <tr> 
+                    <th><tabel>Telefone</tabel></th>
+                    <td><input type="text"></td>
+                    <th><tabel>Mensagem</tabel></th> 
+                    <td><textarea rows="4" cols="45" style="resize: none">Deixe sua mensagem aqui...</textarea></td> 
+                </tr>
+                <tr>
+                    <th><button>Enviar</button></th>
+                </tr>
+
+
+
+            </table>            
+
+
+        </form>
+       
+    </div>
+
+
+
+
+</body>
+</html>

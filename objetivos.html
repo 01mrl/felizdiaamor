@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetivos</title>
+</head> 
+
+<style>
+
+body {
+    margin: 0;
+    border: solid black 3px;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color:#494B55;
+}
+
+ul {
+    list-style-type: none;
+    color: black;
+
+}
+
+.borda {
+    border: solid black 3px;
+}
+
+a,a:link {
+    text-decoration: none;
+    padding: 8px 16px;
+    border: solid black 1px;
+    color: black;
+    background-color: #315AFF;
+}
+
+a:hover {
+    background-color: #315AFF;
+    color: white;
+}
+
+li {
+    float:left
+}
+
+
+.lista_vertical {
+    list-style:disc
+    ;float:none
+    ;}
+
+.container {
+    display: grid;
+}
+
+.menu {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    justify-content: center;
+    background-color:#494B55;
+    gap: 20px;
+
+}
+.corfundo {
+    background-color: #4B493C;
+}
+.texto {
+    
+    grid-column-start: 1;
+    grid-column-end: 12;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    color: black;
+}
+
+.alinhamento {
+    align-items: center;
+}
+</style>
+
+<body>
+<section class="borda">    
+    <header class="container">
+        <h1 style="color: yallow; text-align: center;">Objetivos de Vida</h1>
+        <br>
+    
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="profissional.html">Profissional</a></li>
+            <li><a href="ensino.html">Ensino</a></li>
+            <li><a href="objetivos.html">Objetivos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+</section>
+
+<div class="container alinhamento corfundo borda">
+
+<section class="texto">
+    
+    <h2>Esses são alguns dos meus objetivos de vida</h2>
+    <ul>
+        <li class="lista_vertical">Concluir minha faculdade</li>
+        <li class="lista_vertical">Passar em algum concurso público</li>
+        <li class="lista_vertical">Fazer Direito</li>
+        <li class="lista_vertical">Casar-me</li>
+        <li class="lista_vertical">Construir uma família</li>
+
+    </ul>
+</section>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profissional</title>
+</head> 
+
+<style>
+
+body {
+    /* todo o corpo da página terá essas especificações
+    margem 0 e uma morda preta de 3 px */
+    margin: 0;
+    border: solid black 3px;
+}
+header {
+    /*declaração do início e do fim do cabeçalho e a cor dele*/
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color:#494B55;
+}
+ul {
+     /*retirando o simbolo da lista e aplicando a cor preta às letras*/
+    list-style-type: none;
+    color: black;
+    
+}
+.borda {
+    /*aplica uma borda preta de 3 px*/
+    border: solid black 3px;
+}
+a,
+a:link {
+    /*Aplicando um espaçamento entre os links
+    aplicando uma borda
+    aplicando a cor preta às letras
+    aplicando a cor azul ao fundo*/
+    text-decoration: none;
+    padding: 8px 16px;
+    border: solid black 1px;
+    color: black;
+    background-color: #315AFF;
+}
+._link {
+    /*determina a cor das letras dos links da minha atividade extensionista
+    a cor do fundo e a borda*/
+    border: none;
+    color: black;
+    background-color: #22631d;
+}
+a:hover {
+    /*ao passar o cursor por cima do link, ele irá mudar a cor da letra para branca*/
+    background-color: #315AFF;
+    color: white;
+}
+li {float:left}
+
+.container {
+    /*classe para fazer a página ter quadrados, e assim declarar a posição de cada item*/
+    display: grid;
+}
+
+.menu {
+    /*classe para deterimar a posição do menu
+    passa a ser centralizado e da cor aplicada*/
+    grid-column-start: 6;
+    grid-column-end: 12;
+    justify-content: center;
+    background-color:#494B55;
+    gap: 20px;
+}
+.imagem_proficao {
+    /*determina a coluna que inicia e a que finaliza as imagens das profissões,
+    seu tamanho máximo e a margem*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    img { max-width: 200px; 
+    margin: 0;
+    }
+}
+
+.corfundo1 {
+    /*determina uma cor principal para as profissionais*/
+    background-color:#94A2D7;
+}
+.corfundo2 {
+    /*determina uma cor alternativa para as profissionais*/
+    background-color:white;
+}
+.texto_proficao {
+    /*determina a coluna que inicia e a que finaliza os textos das profissões
+    determina uma margem nas laterias
+    justifica o texto e coloca a cor preta nas cores*/
+    grid-column-start: 4;
+    grid-column-end: 12;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    color: black;
+}
+.alinhamento {
+    /*alinha os itens ao centro (verticalmente)*/
+    align-items: center;
+}
+</style>
+
+<body>
+<section class="borda">    
+    <header class="container">
+        <!--Título principal da página-->
+        <h1 style="color: yallow; text-align: center;">Vida Profissional</h1>
+        <br>
+    
+    </header>
+    <nav class="container menu">
+        <ul>
+            <!--Menu de navegação-->
+            <li><a href="index.html">Início</a></li>
+            <li><a href="profissional.html">Profissional</a></li>
+            <li><a href="ensino.html">Ensino</a></li>
+            <li><a href="objetivos.html">Objetivos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+</section>
+<div class="container alinhamento corfundo1 borda">
+    <aside class="imagem_proficao">
+        <!--Imagem da profissão-->
+        <img src="metalurgico.jpg">     
+    </aside>
+
+<section class="texto_proficao">
+    <!--Texto da profissão-->
+    <h2>Metalúrgica</h2>
+    <p>Logo cedo, com apenas 10 anos, ia ver meu tio trabalhar em sua Metalúrgica. Me impressionava a forma com que juntando alguns ferros ele fazia um portão, uma porta, uma lixeira e muitas outras coisas.</p>
+    <p>Aos 14 anos eu comecei a ajudá-lo, mas não fazia o que ele fazia, para aquilo eu não tinha o dom. Comecei apenas procurando as ferramentos que ele precisava, acho que era o mais difícil... Logo mais comecei a operar algumas ferramentas, como a esmerilhadeira, que naquela época, devia pesar o mesmo que eu.</p>
+    <p>Com o tempo comecei a fazer alguns trabalhos mais difíceis, mas chegou um momento que eu precisei sair, mas aprendi muita coisa com aquilo.</p>
+</section>
+
+<br>
+
+</div>
+
+<div class="container alinhamento corfundo2 borda">
+    
+    <aside class="imagem_proficao">
+        <!--Imagem da profissão-->
+        <img src="garcom.jpg">     
+    </aside>
+
+<section class="texto_proficao">
+    <!--Texto da profissão-->
+    <h2>Garçom</h2>
+    <p>Meu primeiro emprego propriamente dito, pois foi quando comecei a receber valores pelos meus esforços, não que meu tio me explorasse, mas sim porque era voluntário. Por indicação de um amigo, comecei a trabalhar numa Hamburgueria do meu bairro. O hamburguer mais gostoso da cidade saia dali.</p>
+    <p>Aos poucos fui ganhando experiencia naquilo, tentava ser o mais gentil possível com os clientes, até um dia que eu tive subir e ajeitar algo no computador de lá. Depois disso, nunca mais desci. Acho que a dona precisava de um descanso, não sei. Só sei que depois daquele dia, ela não foi mais pro local onde ficávamos, eu já estava contralando o caixa.</p>
+    <p>Mas como nada dura pra sempre, a Hamburgueria fechou, e lá estava eu, agora desempregado.</p>
+</section>
+
+</div>
+
+<div class="container alinhamento corfundo1 borda">
+    <!--Imagem da profissão-->
+    <aside class="imagem_proficao">
+        <img src="garcom2.jpg">     
+    </aside>
+
+<section class="texto_proficao">
+    <!--Texto da profissão-->
+    <h2>Garçom novamente</h2>
+    <p>Após minha saída da Hamburgueria, fui convidado a trabalhar como garçom novamente, dessa vez num local onde vendiamos espetinho de carne e outras coisa</p>
+    <p>No início foi muito complicado, pois era um local totalmente diferente, como uma pegada bem mais rápido, tinha que ser bem ágil.</p>
+    <p>Mas eu consegui pegar o jeito, fiquei até um tempo como churrasqueiro. Mas não era aquilo que eu queria, eu queria algo que eu conseguisse ter um tempo para estudar, pois eu havia trancado minha faculdade por causa do outro emprego, e nesse novo, com certeza não teria como.</p>
+    <p>Então chegou a maioridade, chegou a hora de se alistar no exército. Não sei se fiz a escolha certa naquele momento, mas fui servir ao exército, e daquele local, tive que me demitir.</p>
+</section>
+
+</div>
+
+<div class="container alinhamento corfundo2 borda">
+    <!--Imagem da profissão-->
+    <aside class="imagem_proficao">
+        <img src="eb.jpg">     
+    </aside>
+
+<section class="texto_proficao">
+    <!--Texto da profissão-->
+    <h2>Exército Brasileiro</h2>
+    <p>Agora tudo mudou, saí da vida civil e incorporei nas fileiras do EB. Aqui sim eu senti a diferença entre os lugares que trabalhei. Eu que procurava tempo para estudar, agora tinha que dormir metade do tempo que eu dormia e trabalhar o dobro.</p>
+    <p>O início foi bem difícil, cansativo e trabalhoso, mas ao passar dos meses fui pegando o costume. Hoje já não sei mais como é ser civíl, pra mim, nunca fui... Brincadeiras à parte, estou lá até hoje, e pretendo sair apenas quando me estabilizar em outra coisa. Agora já consigo estudar e até mesmo cursar uma faculdade.
+    </p>
+</section>  
+
+</div>
+
+<div class="container alinhamento corfundo1 borda">
+    
+    <aside class="imagem_proficao">
+        <!--Imagem da profissão-->
+        <img src="programador.jpg">     
+    </aside>
+
+<section class="texto_proficao">
+    <!--Texto da profissão-->
+    <h2>Programador</h2>
+    <p>Ainda não fiz grandes trabalhos na área de programação, mas estou desenvolvendo um aplicativo em Python para minha Atividade Extensionista. O código desenvolvido até então e as fotos estão nos links abaixo.
+</p>
+<p><a class="_link" href="https://drive.google.com/drive/folders/1cWGZNAmD5V0mRc4pKxwlbX0xqb9mzJce?usp=drive_link" target="_blank">Prints do aplicativo</a> <a class="_link" href="https://github.com/01mrl/AtividadeExtensionista" target="_blank">Arquivos e códigos do aplicativo</a></p>
+</section>  
+
+</div>
+
+</div>
+
+</body>
+</html>

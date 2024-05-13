@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortIfólio Pessoal</title>
+</head>
+
+
+<style>
+
+
+body {
+    /* todo o corpo da página terá essas especificações
+    margem 0 e uma morda preta de 3 px */
+    margin: 0;
+    border: solid black 3px;    
+}
+
+header {
+    /*declaração do início e do fim do cabeçalho e a cor dele*/
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color:#494B55;
+}
+
+ul {
+    /*retirando o simbolo da lista e aplicando a cor preta às letras*/
+    list-style-type: none;
+    color: black;
+}
+
+a,
+a:link {
+    /*Aplicando um espaçamento entre os links
+    aplicando uma borda
+    aplicando a cor preta às letras
+    aplicando a cor azul ao fundo*/
+    text-decoration: none;
+    padding: 8px 16px;
+    border: solid black 1px;
+    color: black;
+    background-color: #315AFF;
+}
+
+a:hover {
+    /*ao passar o cursor por cima do link, ele irá mudar a cor da letra para branca*/
+    background-color: #315AFF;
+    color: white;
+}
+
+li {float:left}
+
+.container {
+    /*classe para fazer a página ter quadrados, e assim declarar a posição de cada item*/
+    display: grid;
+}
+
+.menu {
+    /*classe para deterimar a posição do menu
+    passa a ser centralizado e da cor aplicada*/
+    grid-column-start: 6;
+    grid-column-end: 12;
+    justify-content: center;
+    background-color:#494B55;
+}
+
+.infos {
+    /*classe para deixar a letra preta*/
+    color: black
+}
+.texto_principal {
+    /*o texto principal da página passa a ter essas aplicações
+    inicia na terceira coluna
+    finaliza na décima segunda
+    tem um distanciamento nas laterias de 10 px
+    o texto fica justificado*/
+    grid-column-start: 3;
+    grid-column-end: 12;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+
+.imagem_pessoal {
+    /*classe para determinar a posição das imagens e o seu tamanho máximo*/
+grid-column-start: 1;
+grid-column-end: 2;
+img { max-width: 200px; }
+
+}
+
+.borda {
+    /*aplica uma borda preta de 3 px*/
+    border: solid black 3px;
+}
+@media only screen and (max-width: 767px) {
+    .weapper {
+        /*altera a div que está com as infos pessoais*/
+        grid-column-start: 1;
+        grid-column-end: 1;
+
+    }
+
+    .imagem_pessoal {
+        /*altera a posicação da imagem*/
+    grid-column-start: 1;
+    grid-column-end: 1;
+    }
+
+    .texto_principal {
+        /*altera o texto principal*/
+    grid-column-start: 1;
+    grid-column-end: 1;
+    }
+
+}
+
+</style>
+
+<body>
+
+<section class="borda"> 
+
+    <header class="container">
+        <!--Título principal da página-->
+        <h1 style="color: yallow; text-align: center;">Portifólio Pessoal</h1>
+        
+    <br>
+
+</header>
+
+<nav class="container menu">
+    <ul>
+        <!--Menu de navegação-->
+        <li><a href="index.html">Início</a></li>
+        <li><a href="profissional.html">Profissional</a></li>
+        <li><a href="ensino.html">Ensino</a></li>
+        <li><a href="objetivos.html">Objetivos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+    </ul>
+</nav>
+</section>
+
+<div class="container weapper borda">
+    <aside class="imagem_pessoal">
+        <!--Imagem ilustativa do elaborador do trabalho-->
+        <img src="imagem.png">
+            <div class="infos">
+                <!--informações pessoais-->
+            <p><strong>Nome: </strong>Murilo Amorim Barbosa</p>
+            <p><strong>Data Nascimento: </strong>11 de agosto de 2002</p>
+            <p><strong>Local de Nascimento: </strong>Juazeiro - BA</p>
+        </div>        
+    </aside>
+
+
+<section class="texto_principal">
+    <!--texto principal da página-->
+    <h1> Um pouco sobre mim</h1>
+    <p>Olá, tudo bom? Espero que sim! Eu me chamo Murilo, sou estudante do Curso de Análise e Desenvolvimento de Sistemas. Moro no estado de Pernambuco, onde passei toda minha vida. Sou um rapaz simples e cheio de sonhos, às vezes teimoso e chato, mas dá para aguentar.</p>
+    <p>Na disciplina "Ferramentas de Desenvolvimento WEB" fui desafiado a desenvolver um Portifólio Pessoal. E aqui está ele...</p>
+    <p>Há um menu superior que te direcionará pela minha vida, onde você encontrará um pouco sobre a minha vida profissional, acadêmica e um pouco do meus objetivos de vida.</p>
+    <p>Clique sobre uma das opções e role para baixo para ver todas as informções.</p>
+    <p>Esse Portiólio tem fins totalmente acadêmicos. Ele é o meu trabalho da Disciplina, hospedado no 000webhost. </p>
+    <p>Enfim, espero que cumpra todos os requisitos esperados. Bye Bye.</p>
+</section>
+</div>
+
+</body>
+</html>

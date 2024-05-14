@@ -3,33 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contato</title>
 </head>
 
 <style>
 
 body {
+    /* todo o corpo da página terá essas especificações
+    margem 0 e uma morda preta de 3 px */
     margin: 0;
     border: solid black 3px;
 }
 
 header {
+     /*declaração do início e do fim do cabeçalho e a cor dele*/
     grid-column-start: 1;
     grid-column-end: 12;
     background-color:#494B55;
 }
 
 ul {
+    /*retirando o simbolo da lista e aplicando a cor preta às letras*/
     list-style-type: none;
     color: black;
     
 }
 
 .borda {
+    /*aplica uma borda preta de 3 px*/
     border: solid black 3px;
 }
-a,
-a:link {
+a,a:link {
+    /*Aplicando um espaçamento entre os links
+    aplicando uma borda
+    aplicando a cor preta às letras
+    aplicando a cor azul ao fundo*/
     text-decoration: none;
     padding: 8px 16px;
     border: solid black 1px;
@@ -38,6 +46,8 @@ a:link {
 }
 
 a:hover {
+    /*determina a cor das letras dos links da minha atividade extensionista
+    a cor do fundo e a borda*/
     background-color: #315AFF;
     color: white;
 }
@@ -45,10 +55,13 @@ a:hover {
 li {float:left}
 
 .container {
+    /*classe para fazer a página ter quadrados, e assim declarar a posição de cada item*/
     display: grid;
 }
 
 .menu {
+    /*classe para deterimar a posição do menu
+    passa a ser centralizado e da cor aplicada*/
     grid-column-start: 6;
     grid-column-end: 12;
     justify-content: center;
@@ -57,6 +70,9 @@ li {float:left}
 }
 
 .contato {
+    /*determina a coluna que inicia e a que finaliza o formulario de contato
+    determina uma margem nas laterias
+    justifica o texto e coloca a cor preta nas cores*/
     grid-column-start: 1;
     grid-column-end: 12;
     padding-left: 10px;
@@ -65,16 +81,7 @@ li {float:left}
     color: black;
 }
 
-.texto_ensino {
-    
-    grid-column-start: 4;
-    grid-column-end: 12;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: justify;
-    color: black;
-}
-
+/*dermina o tamanho dos inputs*/
 input[type=email], input[type=text] {
 width: 345px;
 
@@ -89,12 +96,14 @@ width: 345px;
     
     <section class="borda">    
         <header class="container">
+            <!--Título principal da página-->
             <h1 style="color: yallow; text-align: center;">Contato</h1>
             <br>
         
         </header>
         <nav class="container menu">
             <ul>
+                <!--Menu de navegação-->
                 <li><a href="index.html">Início</a></li>
                 <li><a href="profissional.html">Profissional</a></li>
                 <li><a href="ensino.html">Ensino</a></li>
@@ -109,25 +118,36 @@ width: 345px;
     <div class="container alinhamento corfundo1 borda contato">
 
         <h3>Informe os dados abaixo</h3>     
-
+        <!--Formulário de contato-->
         <form>
-
+            <!--Tabela para posicionar o formulário-->
             <table>
+                <!--1ª Linha-->
                 <tr> 
+                    <!--1ª coluna-->
                     <th><tabel>Nome Completo</tabel></th> 
+                    <!--2ª coluna-->
                     <td><input type="text"></td>
-                     
+                     <!--3ª coluna-->
                     <th><tabel>Email</tabel></th>
+                    <!--4ª coluna-->
                     <td><input type="email"> </td> 
                 </tr> 
                 
+                <!--2ª Linha-->
                 <tr> 
+                    <!--1ª coluna-->
                     <th><tabel>Telefone</tabel></th>
+                    <!--2ª coluna-->
                     <td><input type="text"></td>
+                    <!--3ª coluna-->
                     <th><tabel>Mensagem</tabel></th> 
+                    <!--4ª coluna-->
                     <td><textarea rows="4" cols="45" style="resize: none">Deixe sua mensagem aqui...</textarea></td> 
                 </tr>
+                <!--3ª Linha-->
                 <tr>
+                    <!--1ª coluna-->
                     <th><button>Enviar</button></th>
                 </tr>
 

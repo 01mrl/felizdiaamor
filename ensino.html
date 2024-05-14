@@ -8,27 +8,36 @@
 
 <style>
 body {
+     /* todo o corpo da página terá essas especificações
+    margem 0 e uma morda preta de 3 px */
     margin: 0;
     border: solid black 3px;
 }
 
 header {
+     /*declaração do início e do fim do cabeçalho e a cor dele*/
     grid-column-start: 1;
     grid-column-end: 12;
     background-color:#494B55;
 }
 
 ul {
+    /*retirando o simbolo da lista e aplicando a cor preta às letras*/
     list-style-type: none;
     color: black;
     
 }
 
 .borda {
+    /*aplica uma borda preta de 3 px*/
     border: solid black 3px;
 }
 a,
 a:link {
+    /*Aplicando um espaçamento entre os links
+    aplicando uma borda
+    aplicando a cor preta às letras
+    aplicando a cor azul ao fundo*/
     text-decoration: none;
     padding: 8px 16px;
     border: solid black 1px;
@@ -37,6 +46,8 @@ a:link {
 }
 
 a:hover {
+    /*determina a cor das letras dos links da minha atividade extensionista
+    a cor do fundo e a borda*/
     background-color: #315AFF;
     color: white;
 }
@@ -44,10 +55,13 @@ a:hover {
 li {float:left}
 
 .container {
+    /*classe para fazer a página ter quadrados, e assim declarar a posição de cada item*/
     display: grid;
 }
 
 .menu {
+    /*classe para deterimar a posição do menu
+    passa a ser centralizado e da cor aplicada*/
     grid-column-start: 6;
     grid-column-end: 12;
     justify-content: center;
@@ -57,19 +71,17 @@ li {float:left}
 
 
 .corfundo1 {
+    /*determina uma cor principal para algumas divs*/
     background-color:#94A2D7;
 }
 .corfundo2 {
-    background-color:#4B493C;
-}
-.corfundo3 {
-    background-color: #94A2D7;
-}
-.corfundo4 {
-    background-color: #4B493C;
+    /*determina uma cor alternativa para alguma divs*/
+    background-color:white;
 }
 .texto_ensino {
-    
+     /*determina a coluna que inicia e a que finaliza os textos de cada assunto sobre o meu ensino
+    determina uma margem nas laterias
+    justifica o texto e coloca a cor preta nas cores*/
     grid-column-start: 4;
     grid-column-end: 12;
     padding-left: 10px;
@@ -79,6 +91,7 @@ li {float:left}
 }
 
 .alinhamento {
+    /*alinha os itens ao centro (verticalmente)*/
     align-items: center;
 }
 </style>
@@ -86,12 +99,14 @@ li {float:left}
 <body>
 <section class="borda">    
     <header class="container">
+        <!--Título principal da página-->
         <h1 style="color: yallow; text-align: center;">Vida Acadêmica</h1>
         <br>
     
     </header>
     <nav class="container menu">
         <ul>
+            <!--Menu de navegação-->
             <li><a href="index.html">Início</a></li>
             <li><a href="profissional.html">Profissional</a></li>
             <li><a href="ensino.html">Ensino</a></li>
@@ -103,6 +118,7 @@ li {float:left}
 <div class="container alinhamento corfundo1 borda">
     
 <section class="texto_ensino">
+    <!--Texto 1-->
     <h2>Ensino Fundamental</h2>
     <p>Minha vida escolar iniciou na escola do bairro onde moro, uma escola municipal bem simples, naquela época... Hoje já é uma escola bem reformada, salas com ar-condionado, paredes pintadas. Quando estudei lá, era tudo diferente, fico contente em vê-la bonita!</p>
     <p>Comecei meus estudos no Ensino Fundamentel em 2008, terminei em 2016. Todos esses anos estudei na mesma escola, pude vê-la evoluindo, amigos indo embora, novos professores chegando, lembro muito bem daquela professorinha, já com seus 60 anos, que hoje, já nem lembra mais de mim.</p>
@@ -115,6 +131,7 @@ li {float:left}
 <div class="container alinhamento corfundo2 borda">
 
 <section class="texto_ensino">
+    <!--Texto 2-->
     <h2>Ensino Médio</h2>
     <p>Aqui já parece que somos adultos, né? Cheios de liberdade. Mas não, não somos... </p>
     <p>A minha escola antiga só funcionava o Ensino Fundamental, então, tive que ser transferido, algo que no início me intrigou, não é fácil sair de um local que você passou 8 anos, né?!</p>
@@ -125,11 +142,12 @@ li {float:left}
 
 </div>
 
-<div class="container alinhamento corfundo3 borda">
+<div class="container alinhamento corfundo1 borda">
 
 <section class="texto_ensino">
     
     <h2>A química não rolou</h2>
+    <!--Texto 3-->
     <p>Durante meu Ensino Médio, eu prestei o ENEM apenas uma vez, no 3º Ano. Consegui uma nota razoável, Até que consegui entrar numa faculdade federal.</p>
     <p>Como mencionei na aréa profissional, eu tive que sair, pois necessitava trabalhar, infelizmente tive que abandonar o curso.</p>
     <p>Era complicado naquele momento, pois eu não tinha como ir até a faculdade, e também precisava de dinheiro e como meu curso era à tarde, não dava para conciliar com o trabalho. Na balança, o dinheiro pesou...</p>
@@ -138,11 +156,12 @@ li {float:left}
 
 </div>
 
-<div class="container alinhamento corfundo4 borda">
+<div class="container alinhamento corfundo2 borda">
 
 <section class="texto_ensino">
     
     <h2>A programação e a UNINTER</h2>
+    <!--Texto 4-->
     <p>Eu sempre fui um cara curioso, gostava de fuçar os programas, os arquivos, tudo que eu via no computador. Mas nunca tinha entendido o que era programação de verdade.</p>
     <p>Quando eu trabalhava na Hamburgueria, foi apresentada a mim a linguagem VBA, aquilo me fascinou, comecei a ir mais afundo, assistindo vídeos, procurando coisas pra fazer, até fiz um sistema de gerenciamento de caixa para esse trabalho.</p>
     <p>Depois de muito tempo, conheci a UNINTER, e procurando, encontrei o curso de ADS, e que maravilha, com um curso EAD eu poderia estudar e trabalhar. Isso foi incrível. Falta apenas 10 meses para eu finalizar o Curso, e já estou sentindo é saudades.</p>
